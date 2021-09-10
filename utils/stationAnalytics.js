@@ -165,7 +165,7 @@ const stationAnalytics = {
       return tempF;
   }, */
   
-    getTempF(station) {  
+    getTempF(station) {
     let tempF = stationAnalytics.getMaxTemp(station);
     
       tempF = tempF * (9/5) + 32;
