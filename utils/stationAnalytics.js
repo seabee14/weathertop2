@@ -3,6 +3,7 @@
 const stationAnalytics = {
   
   getWeatherCodes(station) {
+    let latestReading = station.readings.length - 1;
     let code = latestReading.code;
     switch (code) {
         case 100:
@@ -102,6 +103,15 @@ const stationAnalytics = {
       }
     }
     return windCompass;
+  },
+  
+  
+  getCode(station) {
+    let code = null;
+    if (station.readings.length > 0) {
+      code = station.readings[station.readings.length - 1];
+    }
+    return code;
   },
   
   
