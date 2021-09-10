@@ -157,17 +157,17 @@ const stationAnalytics = {
     return maxWind;
   },
   
- /* getTempF(station) {  
+  getTempF(station) {  
     let tempF = null;
     if (station.readings.length > 0) {
       tempF = station.readings[station.readings.length - 1].temperature * (9/5) + 32;
     }
       return tempF;
-  }, */
+  }, 
   
- getFarenheit (temp) {
+ /*getFarenheit (temp) {
    return temp *9/5 +32
- },
+ },*/
   
   
   getMinTemp(station) {
