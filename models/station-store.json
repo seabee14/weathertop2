@@ -1,49 +1,115 @@
 {
-  "stationCollection" : [
+  "stationCollection": [
     {
-      "id" : "01",
-      "name" : "Tramore",
-      "readings" : [
+      "id": "01",
+      "title": "Tramore",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "readings": [
         {
-          "id" : "02",
-          "code" : 800,
-          "temperature" : 0.5,
-          "windSpeed" : 3.5,
-          "pressure" : 1002
+          "id": "02",
+          "code": 800,
+          "temperature": 0.5,
+          "windSpeed": 3.5,
+          "pressure": 1002,
+          "windDirection": 90
         },
         {
-           "id" : "03",
-          "code" : 600,
-          "temperature" : 6,
-          "windSpeed" : 2,
-          "pressure" : 1004
+          "id": "03",
+          "code": 600,
+          "temperature": 6,
+          "windSpeed": 2,
+          "pressure": 1004,
+          "windDirection": 96
         },
         {
-           "id" : "04",
-          "code" : 700,
-          "temperature" : 8,
-          "windSpeed" : 1,
-          "pressure" : 1005
+          "id": "04",
+          "code": 700,
+          "temperature": 8,
+          "windSpeed": 1,
+          "pressure": 1005,
+          "windDirection": 101
         }
       ]
     },
     {
-       "id" : "05",
-       "name" : "Dunmore",
-      "readings" : [
+      "id": "05",
+      "title": "Dunmore",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "readings": [
         {
-           "id" : "06",
-          "code" : 700,
-          "temperature" : 8,
-          "windSpeed" : 1,
-          "pressure" : 999
+          "id": "06",
+          "code": 700,
+          "temperature": 8,
+          "windSpeed": 1,
+          "pressure": 999,
+          "windDirection": 98
         },
         {
-           "id" : "07",
-          "code" : 200,
-          "temperature" : 0.5,
-          "windSpeed" : 3.5,
-          "pressure" : 1000
+          "id": "07",
+          "code": 200,
+          "temperature": 0.5,
+          "windSpeed": 3.5,
+          "pressure": 1000,
+          "windDirection": 102
+        }
+      ]
+    },
+    {
+      "id": "47c4c110-123b-11ec-8639-71ab39a5cb99",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "title": "test marge",
+      "longitude": "test marge",
+      "lattitude": "test marge",
+      "readings": [
+        {
+          "id": "4c439270-123b-11ec-8639-71ab39a5cb99",
+          "code": "900",
+          "temperature": "20",
+          "windSpeed": "20",
+          "windDirection": "20",
+          "pressure": "999"
+        },
+        {
+          "id": "51980350-123b-11ec-8639-71ab39a5cb99",
+          "code": "800",
+          "temperature": "10",
+          "windSpeed": "10",
+          "windDirection": "123",
+          "pressure": "1002"
+        }
+      ]
+    },
+    {
+      "id": "8f7da7b0-123b-11ec-8639-71ab39a5cb99",
+      "userid": "c76c7720-122f-11ec-baf2-1f50f1804dca",
+      "title": "deiseland",
+      "longitude": "deiseland",
+      "lattitude": "deiseland",
+      "readings": [
+        {
+          "id": "9551a8d0-123b-11ec-8639-71ab39a5cb99",
+          "code": "600",
+          "temperature": "10",
+          "windSpeed": "20",
+          "windDirection": "20",
+          "pressure": "1111"
+        }
+      ]
+    },
+    {
+      "id": "ae314e00-123b-11ec-8639-71ab39a5cb99",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "homers station",
+      "longitude": "homers station",
+      "lattitude": "homers station",
+      "readings": [
+        {
+          "id": "b294a820-123b-11ec-8639-71ab39a5cb99",
+          "code": "900",
+          "temperature": "20",
+          "windSpeed": "20",
+          "windDirection": "20",
+          "pressure": "999"
         }
       ]
     }
