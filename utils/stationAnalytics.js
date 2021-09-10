@@ -36,7 +36,7 @@ const stationAnalytics = {
     getTempF(station) {  
     let tempF = null;
     if (station.readings.length > 0) {
-      tempF = (((station.readings [station.readings.length - 1].temperature) * (9)/5) + 32);
+      tempF = ((station.readings [station.readings.length - 1].temperature) * (9)/5) + 32;
     }
       return tempF;
   },
