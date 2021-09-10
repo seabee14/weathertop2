@@ -13,6 +13,7 @@ const station = {
     const station = stationStore.getStation(stationId);
     const minTemp = stationAnalytics.getMinTemp(station);
     const maxTemp = stationAnalytics.getMaxTemp(station);
+    const latestReading
     const minWind = stationAnalytics.getMinWind(station);
     const maxWind = stationAnalytics.getMaxWind(station);
     const minPressure = stationAnalytics.getMinPressure(station);
