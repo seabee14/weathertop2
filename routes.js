@@ -6,6 +6,7 @@ const router = express.Router();
 const dashboard = require("./controllers/dashboard.js");
 const about = require("./controllers/about.js");
 const station = require('./controllers/station.js');
+const reading = require("./controllers/reading.js");
 const home = require("./controllers/home.js");
 const accounts = require('./controllers/accounts.js');
 
@@ -22,6 +23,9 @@ router.get("/home", home.index);
 router.get("/station/:id", station.index);
 router.get("/station/:id/deletereading/:readingid", station.deleteReading);
 router.get("/dashboard/deletestation/:id", dashboard.deleteStation);
+
+router.get("/reading/:id/editreading/:readingid", reading.index);
+router.post("/reading/:id/updatereading/:readingid", reading.update);
 
 router.post("/station/:id/addreading", station.addReading);
 router.post('/dashboard/addstation', dashboard.addStation);

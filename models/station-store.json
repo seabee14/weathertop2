@@ -88,11 +88,10 @@
       "readings": [
         {
           "id": "9551a8d0-123b-11ec-8639-71ab39a5cb99",
-          "code": "600",
-          "temperature": "10",
-          "windSpeed": "20",
-          "windDirection": "20",
-          "pressure": "1111"
+          "temperature": "30",
+          "windSpeed": "30",
+          "windDirection": "30",
+          "pressure": "1212"
         }
       ]
     },

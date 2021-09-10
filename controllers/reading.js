@@ -1,7 +1,7 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const playlistStore = require("../models/station-store");
+const stationStore = require("../models/station-store");
 
 const reading = {
   index(request, response) {
@@ -11,24 +11,26 @@ const reading = {
     const viewData = {
       title: "Edit Reading",
       station: stationStore.getStation(stationId),
-      reading: stStore.getSong(playlistId, songId)
+      reading: stationStore.getReading(stationId, readingId)
     };
-    response.render("song", viewData);
+    response.render("reading", viewData);
   },
 
   update(request, response) {
-    const playlistId = request.params.id;
-    const songId = request.params.songid;
-    const song = playlistStore.getSong(playlistId, songId)
-    const newSong = {
-      title: request.body.title,
-      artist: request.body.artist,
-      duration: Number(request.body.duration)
+    const stationId = request.params.id;
+    const readingId = request.params.readingid;
+    const reading = stationStore.getReading(stationId, readingId)
+    const newReading = {
+      code: request.body.codee,
+      temperature: request.body.temperature,
+      windSpeed: request.body.windSpeed,
+      windDirection: request.body.windDirection,
+      pressure: request.body.pressure
     };
-    logger.debug(`Updating Song ${songId} from Playlist ${playlistId}`);
-    playlistStore.updateSong(song, newSong);
-    response.redirect("/playlist/" + playlistId);
+    logger.debug(`Updating Reading ${readingId} from Station ${stationId}`);
+    stationStore.updateReading(reading, newReading);
+    response.redirect("/station/" + stationId);
   }
 };
 
-module.exports = song;
+module.exports = reading;
