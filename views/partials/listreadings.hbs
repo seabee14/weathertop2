@@ -1,0 +1,99 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Temperature</th>
+      <th>Wind Speed</th>
+      <th>Wind Direction</th>
+      <th>Pressure</th>
+    </tr>
+    
+    <div class="ui five inverted stackable cards">
+
+        <div class="card">
+            <div class="image"></div>
+            <div class="extra">
+                <h2 class="ui center aligned icon">
+                  <i class="large red marker icon"></i></h2>
+                <h3>{{station.title}}</h3>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image"></div>
+            <div class="extra">
+                <h2 class="ui center aligned icon">
+                  <i class="large purple cloud icon"></i></h2>
+                  <h3>Weather:</h3>
+                  <h5>{{latestReading.code}}</h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image"></div>
+            <div class="extra">
+                <h2 class="ui center aligned icon">
+                  <i class="large blue temperature high icon"></i></h2>
+                <h3>Temperature: </h3>
+                  <h5>
+                    <p>{{latestReading.temperature}} C</p>
+                    <p>{{tempF.temperature}} F</p>
+                    <p>Min: {{minTemp.temperature}} C</p>
+                    <p>Max: {{maxTemp.temperature}} C</p>
+                  </h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image"></div>
+            <div class="extra">
+                <h2 class="ui center aligned icon">
+                  <i class="large yellow wind icon"></i></h2>
+                <h3> Wind: </h3>
+                  <h5>
+                    <p>{{latestReading.windSpeed}}</p>
+                    <p>{{beaufort}}</p>
+                    <p>{{windCompass}}</p>
+                    <p>Min: {{minWind.windSpeed}}</p>
+                    <p>Max: {{maxWind.windSpeed}}</p>
+                </h5>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image"></div>
+            <div class="extra">
+                <h2 class="ui center aligned icon">
+                  <i class="large green atom icon"></i></h2>
+                <h3> Pressure: </h3>
+                  <h5>
+                    <p>{{latestReading.pressure}} hPa</p>
+                    <p>Min: {{minPressure.pressure}} hPa</p>
+                    <p>Max: {{maxPressure.pressure}} hPa</p>
+                  </h5>
+            </div>
+        </div>
+    </div>
+  </thead>
+  <tbody>
+    {{#each station.readings}}
+      <tr>
+        <td>
+          {{code}}
+        </td>
+        <td>
+          {{temperature}}
+        </td>
+        <td>
+        {{windSpeed}}
+        </td>
+        <td>
+        {{windDirection}}
+        </td>
+        <td>
+        {{pressure}}
+        </td>
+        <td>
+          <a href="/station/{{../station.id}}/deletereading/{{id}}" class="ui icon button">
+          <i class="icon trash"></i></a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
