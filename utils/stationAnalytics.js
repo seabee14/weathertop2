@@ -25,6 +25,12 @@ const stationAnalytics = {
     }
   },
   
+  getWeatherCodes(station) {
+    let latestReading = null;
+    let weatherCodes = "";
+    if
+  }
+  
   
   getBeaufort(station) {
     let latestReading = null;
