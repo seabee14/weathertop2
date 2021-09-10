@@ -2,7 +2,7 @@
 
 const stationAnalytics = {
   
-  getWeatherCodes(station) {
+ /* getWeatherCodes(station) {
     let latestReading = station.readings.length - 1;
     let code = latestReading.code;
     switch (code) {
@@ -25,7 +25,19 @@ const stationAnalytics = {
         default:
             return "Code Error";
     }
-  },
+  }, */
+  
+    getWeatherCodes(station) {
+    let latestReading = station.readings.length - 1;
+    let code = latestReading.code;
+      if (code = 100) {
+        return "Clear";
+      } else if (code = 200) {
+        return "Partial Clouds";
+      } else if (code = 300) {
+        return "Cloudy";
+      }
+    },
   
   
   getBeaufort(station) {
