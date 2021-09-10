@@ -121,33 +121,12 @@
       ]
     },
     {
-      "id": "b48f4f90-124f-11ec-ac2c-3116b3518e8e",
+      "id": "105b2630-1252-11ec-ac2c-3116b3518e8e",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": [
-        "Woodstown",
-        "-1.234",
-        "-2.345"
-      ],
-      "longitude": [
-        "Woodstown",
-        "-1.234",
-        "-2.345"
-      ],
-      "lattitude": [
-        "Woodstown",
-        "-1.234",
-        "-2.345"
-      ],
-      "readings": [
-        {
-          "id": "c75e38c0-124f-11ec-ac2c-3116b3518e8e",
-          "code": "600",
-          "temperature": "10",
-          "windSpeed": "10",
-          "windDirection": "123",
-          "pressure": "1002"
-        }
-      ]
+      "title": "Woodstown",
+      "longitude": "Woodstown",
+      "lattitude": "Woodstown",
+      "readings": []
     }
   ]
 }
