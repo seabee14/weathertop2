@@ -167,9 +167,9 @@ const stationAnalytics = {
   
     getTempF(station) {  
     let tempF = stationAnalytics.getMaxTemp(station);
-    if (station.readings.length > 0) {
-      tempF = station.readings[station.readings.length - 1].temperature * (9/5) + 32;
-    }
+    
+      tempF = tempF * (9/5) + 32;
+    
       return tempF;
   },
   

@@ -13,7 +13,7 @@ const station = {
     const station = stationStore.getStation(stationId);
     const minTemp = stationAnalytics.getMinTemp(station);
     const maxTemp = stationAnalytics.getMaxTemp(station);
-    const tempF = maxTemp*(9/5)+32;
+    const tempF = stationAnalytics.getTempF(station);
     const minWind = stationAnalytics.getMinWind(station);
     const maxWind = stationAnalytics.getMaxWind(station);
     const minPressure = stationAnalytics.getMinPressure(station);
@@ -31,12 +31,12 @@ const station = {
       station: stationStore.getStation(stationId),
       latestReading: latestReading,
       minTemp: minTemp,
+      maxTemp: maxTemp,
       minWind: minWind,
+      maxWind: maxWind,
       weatherCodes: weatherCodes,
       minPressure: minPressure,
-      maxTemp: maxTemp,
       maxPressure: maxPressure,
-      maxWind: maxWind,
       windDirection: windDirection,
       windSpeed: windSpeed,
       tempF: tempF,
