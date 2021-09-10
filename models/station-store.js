@@ -49,6 +49,21 @@ const stationStore = {
     return this.store.findBy(this.collection, { userid: userid });
   },
   
+   getReading(id, readingId) {
+    const station = this.store.findOneBy(this.collection, { id: id });
+    const readings = station.readings.filter(reading => reading.id == readingId);
+    return readings[0];
+  },
+
+  updateReading(reading, updatedReading) {
+    reading.code = updatedReading.code;
+    reading.temperature = updatedReading.temperature;
+    reading.windSpeed = updatedReading.windSpeed;
+    reading.windDirection = updatedReading.windDirection;
+    reading.pressure = updatedReading.pressure;
+    this.store.save();
+  }
+  
 };
 
 module.exports = stationStore;
