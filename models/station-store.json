@@ -43,14 +43,6 @@
           "windSpeed": 1,
           "pressure": 999,
           "windDirection": 98
-        },
-        {
-          "id": "07",
-          "code": 200,
-          "temperature": 0.5,
-          "windSpeed": 3.5,
-          "pressure": 1000,
-          "windDirection": 102
         }
       ]
     },

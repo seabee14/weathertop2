@@ -28,28 +28,29 @@ const stationAnalytics = {
   }, */
   
     getWeatherCodes(station) {
+      let latestReading = null;
     let weatherCode = "";
-    let latestReading = station.readings.length - 1;
-    let code = latestReading.code;
-      if (code = 100) {
+    if latestReading = station.readings[station.readings.length - 1];
+      if (latestReading.code = 100) {
         weatherCode = "Clear";
-      } else if (code = 200) {
+      } else if (latestReading.code = 200) {
         weatherCode = "Partial Clouds";
-      } else if (code = 300) {
+      } else if (latestReading.code = 300) {
         weatherCode = "Cloudy";
-      } else if (code = 400) {
+      } else if (latestReading.code = 400) {
         weatherCode = "Light Showers";
-      } else if (code = 500) {
+      } else if (latestReading.code = 500) {
         weatherCode = "Heavy Showers";
-      } else if (code = 600) {
+      } else if (latestReading.code = 600) {
         weatherCode = "Rain";
-      } else if (code = 700) {
+      } else if (latestReading.code = 700) {
         weatherCode = "Snow";
-      } else if (code = 800) {
+      } else if (latestReading.code = 800) {
         weatherCode = "Thunder";
       } else {
         weatherCode = "Code Error";
         }
+      return weatherCode;
       },
       
   
