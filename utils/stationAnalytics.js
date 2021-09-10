@@ -165,12 +165,9 @@ const stationAnalytics = {
       return tempF;
   }, */
   
-    getTempF(station) {
-    let tempF = this.getMaxTemp(station);{
-      tempF = tempF * (9/5) + 32;
-    }
-      return tempF;
-  },
+ getFarenheit (temp) {
+   return temp *9/5 +32
+ },
   
   
   getMinTemp(station) {
