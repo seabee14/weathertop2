@@ -25,21 +25,6 @@ const stationAnalytics = {
     }
   },
   
-  getLatestreading(station) {
-    let latestReading = null;
-    if (station.readings.length > 0) {
-      latestReading = station.readings[station.readings.length - 1];
-    }
-    return latestReading;
-  },
-  
-    getTempF(station) {  
-    let tempF = null;
-    if (station.readings.length > 0) {
-      tempF = station.readings[station.readings.length - 1].temperature * (9/5) + 32;
-    }
-      return tempF;
-  },
   
   getBeaufort(station) {
     let latestReading = null;
@@ -119,6 +104,15 @@ const stationAnalytics = {
   },
   
   
+    getLatestreading(station) {
+    let latestReading = null;
+    if (station.readings.length > 0) {
+      latestReading = station.readings[station.readings.length - 1];
+    }
+    return latestReading;
+  },
+  
+  
   getWindDirection(station) {
     let windDirection = null;
     if (station.readings.length > 0) {
@@ -161,6 +155,22 @@ const stationAnalytics = {
       }
     }
     return maxWind;
+  },
+  
+ /* getTempF(station) {  
+    let tempF = null;
+    if (station.readings.length > 0) {
+      tempF = station.readings[station.readings.length - 1].temperature * (9/5) + 32;
+    }
+      return tempF;
+  }, */
+  
+    getTempF(station) {  
+    let tempF = stationAnalytics.getMaxTemp(station);
+    if (station.readings.length > 0) {
+      tempF = station.readings[station.readings.length - 1].temperature * (9/5) + 32;
+    }
+      return tempF;
   },
   
   
