@@ -30,28 +30,30 @@ const stationAnalytics = {
     getWeatherCodes(station) {
       let latestReading = null;
     let weatherCode = "";
-    if latestReading = station.readings[station.readings.length - 1];
-      if (latestReading.code = 100) {
-        weatherCode = "Clear";
-      } else if (latestReading.code = 200) {
-        weatherCode = "Partial Clouds";
-      } else if (latestReading.code = 300) {
-        weatherCode = "Cloudy";
-      } else if (latestReading.code = 400) {
-        weatherCode = "Light Showers";
-      } else if (latestReading.code = 500) {
-        weatherCode = "Heavy Showers";
-      } else if (latestReading.code = 600) {
-        weatherCode = "Rain";
-      } else if (latestReading.code = 700) {
-        weatherCode = "Snow";
-      } else if (latestReading.code = 800) {
-        weatherCode = "Thunder";
-      } else {
-        weatherCode = "Code Error";
-        }
-      return weatherCode;
-      },
+    if (station.readings.length > 0) {
+      latestReading = station.readings[station.readings.length - 1];
+          if (latestReading.code = 100) {
+            weatherCode = "Clear";
+          } else if (latestReading.code = 200) {
+            weatherCode = "Partial Clouds";
+          } else if (latestReading.code = 300) {
+            weatherCode = "Cloudy";
+          } else if (latestReading.code = 400) {
+            weatherCode = "Light Showers";
+          } else if (latestReading.code = 500) {
+            weatherCode = "Heavy Showers";
+          } else if (latestReading.code = 600) {
+            weatherCode = "Rain";
+          } else if (latestReading.code = 700) {
+            weatherCode = "Snow";
+          } else if (latestReading.code = 800) {
+            weatherCode = "Thunder";
+          } else {
+            weatherCode = "Code Error";
+          }
+    }
+   return weatherCode;
+},
       
   
   

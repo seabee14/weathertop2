@@ -23,7 +23,7 @@
         },
         {
           "id": "04",
-          "code": 700,
+          "code": 100,
           "temperature": 8,
           "windSpeed": 1,
           "pressure": 1005,
@@ -38,11 +38,19 @@
       "readings": [
         {
           "id": "06",
-          "code": 700,
+          "code": 100,
           "temperature": 8,
           "windSpeed": 1,
           "pressure": 999,
           "windDirection": 98
+        },
+        {
+          "id": "de156590-1284-11ec-b17d-8f757b1df29a",
+          "code": "300",
+          "temperature": "",
+          "windSpeed": "",
+          "windDirection": "",
+          "pressure": ""
         }
       ]
     },
