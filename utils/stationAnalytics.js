@@ -28,16 +28,30 @@ const stationAnalytics = {
   }, */
   
     getWeatherCodes(station) {
+    let weatherCode = "";
     let latestReading = station.readings.length - 1;
     let code = latestReading.code;
       if (code = 100) {
-        return "Clear";
+        weatherCode = "Clear";
       } else if (code = 200) {
-        return "Partial Clouds";
+        weatherCode = "Partial Clouds";
       } else if (code = 300) {
-        return "Cloudy";
-      }
-    },
+        weatherCode = "Cloudy";
+      } else if (code = 400) {
+        weatherCode = "Light Showers";
+      } else if (code = 500) {
+        weatherCode = "Heavy Showers";
+      } else if (code = 600) {
+        weatherCode = "Rain";
+      } else if (code = 700) {
+        weatherCode = "Snow";
+      } else if (code = 800) {
+        weatherCode = "Thunder";
+      } else {
+        weatherCode = "Code Error";
+        }
+      },
+      
   
   
   getBeaufort(station) {
