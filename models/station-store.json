@@ -87,11 +87,20 @@
       "lattitude": "deiseland",
       "readings": [
         {
-          "id": "9551a8d0-123b-11ec-8639-71ab39a5cb99",
+          "id": "7a820690-1253-11ec-ac2c-3116b3518e8e",
+          "code": "900",
+          "temperature": "10",
+          "windSpeed": "20",
+          "windDirection": "20",
+          "pressure": "999"
+        },
+        {
+          "id": "97800da0-1253-11ec-ac2c-3116b3518e8e",
+          "code": "300",
           "temperature": "30",
-          "windSpeed": "30",
-          "windDirection": "30",
-          "pressure": "1212"
+          "windSpeed": "10",
+          "windDirection": "320",
+          "pressure": "1100"
         }
       ]
     },
