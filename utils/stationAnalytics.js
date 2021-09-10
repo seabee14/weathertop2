@@ -2,7 +2,8 @@
 
 const stationAnalytics = {
   
-  getWeatherCodes(code) {
+  getWeatherCodes(station) {
+    let code = latestReading.code;
     switch (code) {
         case 100:
             return "Clear";
@@ -24,12 +25,6 @@ const stationAnalytics = {
             return "Code Error";
     }
   },
-  
-  getWeatherCodes(station) {
-    let latestReading = null;
-    let weatherCodes = "";
-    if
-  }
   
   
   getBeaufort(station) {
