@@ -128,6 +128,14 @@
           "pressure": "1000"
         }
       ]
+    },
+    {
+      "id": "5ef36170-1268-11ec-b738-51bbf898df56",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "Woodstown",
+      "latitude": "Woodstown",
+      "longitude": "Woodstown",
+      "readings": []
     }
   ]
 }
