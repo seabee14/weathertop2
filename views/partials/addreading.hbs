@@ -1,6 +1,10 @@
 <form class="ui stacked segment form" action="/station/{{station.id}}/addreading" method="POST">
   <div class="two fields">
     <div class="field">
+      <label>Time/Date</label>
+      <input placeholder="Time/Date" type="text" name="timeStamp">
+    </div>
+    <div class="field">
       <label>Code</label>
       <input placeholder="00" type="text" name="code">
     </div>
