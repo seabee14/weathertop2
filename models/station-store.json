@@ -45,12 +45,12 @@
           "windDirection": 98
         },
         {
-          "id": "de156590-1284-11ec-b17d-8f757b1df29a",
-          "code": "300",
-          "temperature": "",
-          "windSpeed": "",
-          "windDirection": "",
-          "pressure": ""
+          "id": "d2d20b30-12c9-11ec-afaf-191da567ff82",
+          "code": "700",
+          "temperature": "20",
+          "windSpeed": "10",
+          "windDirection": "123",
+          "pressure": "1002"
         }
       ]
     },

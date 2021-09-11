@@ -2,7 +2,7 @@
 
 const stationAnalytics = {
   
- /* getWeatherCodes(station) {
+  getWeatherCodes(station) {
     let latestReading = station.readings.length - 1;
     let code = latestReading.code;
     switch (code) {
@@ -25,9 +25,9 @@ const stationAnalytics = {
         default:
             return "Code Error";
     }
-  }, */
+  }, 
   
-    getWeatherCodes(station) {
+   /* getWeatherCodes(station) {
       let latestReading = null;
     let weatherCode = "";
     if (station.readings.length > 0) {
@@ -53,7 +53,7 @@ const stationAnalytics = {
           }
     }
    return weatherCode;
-},
+}, */
       
   
   
