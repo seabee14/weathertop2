@@ -128,6 +128,39 @@
           "pressure": "1000"
         }
       ]
+    },
+    {
+      "id": "e8922b70-12ca-11ec-a509-85fe62c51a5a",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "title": "test",
+      "lat": "100",
+      "long": "2.345",
+      "readings": []
+    },
+    {
+      "id": "090e83d0-12cb-11ec-a509-85fe62c51a5a",
+      "userid": "c76c7720-122f-11ec-baf2-1f50f1804dca",
+      "title": "test",
+      "lat": "2.345",
+      "long": "1.234",
+      "readings": [
+        {
+          "id": "10445ee0-12cb-11ec-a509-85fe62c51a5a",
+          "code": "900",
+          "temperature": "10",
+          "windSpeed": "20",
+          "windDirection": "20",
+          "pressure": "999"
+        },
+        {
+          "id": "23ce33a0-12cb-11ec-a509-85fe62c51a5a",
+          "code": "600",
+          "temperature": "20",
+          "windSpeed": "10",
+          "windDirection": "123",
+          "pressure": "1111"
+        }
+      ]
     }
   ]
 }
