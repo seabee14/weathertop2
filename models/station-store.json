@@ -135,14 +135,6 @@
       ]
     },
     {
-      "id": "e8922b70-12ca-11ec-a509-85fe62c51a5a",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "test",
-      "lat": "100",
-      "long": "2.345",
-      "readings": []
-    },
-    {
       "id": "090e83d0-12cb-11ec-a509-85fe62c51a5a",
       "userid": "c76c7720-122f-11ec-baf2-1f50f1804dca",
       "title": "test",
@@ -166,6 +158,32 @@
           "pressure": "1111"
         }
       ]
+    },
+    {
+      "id": "2dc99880-12e5-11ec-92d8-998ce1c3ab17",
+      "userid": "231c7100-12e5-11ec-92d8-998ce1c3ab17",
+      "title": "test",
+      "lat": "100",
+      "long": "2.345",
+      "readings": [
+        {
+          "id": "3e3145b0-12e5-11ec-92d8-998ce1c3ab17",
+          "date": "2021-07-14",
+          "code": "800",
+          "temperature": "20",
+          "windSpeed": "20",
+          "windDirection": "20",
+          "pressure": "1002"
+        }
+      ]
+    },
+    {
+      "id": "34133ed0-12e5-11ec-92d8-998ce1c3ab17",
+      "userid": "231c7100-12e5-11ec-92d8-998ce1c3ab17",
+      "title": "test 2",
+      "lat": "1.2345",
+      "long": "2.345",
+      "readings": []
     }
   ]
 }

@@ -20,6 +20,13 @@
       "email": "con@bren.com",
       "password": "secret",
       "id": "c76c7720-122f-11ec-baf2-1f50f1804dca"
+    },
+    {
+      "firstName": "conor",
+      "lastName": "brennan",
+      "email": "conor@bren.com",
+      "password": "secret",
+      "id": "231c7100-12e5-11ec-92d8-998ce1c3ab17"
     }
   ]
 }
